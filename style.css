@@ -52,3 +52,21 @@ input[type=text] {
     
 }
 /* sreach style end */
+#allMeals{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px 30px;
+}
+.imgDiv{
+    margin: 5px;
+}
+.imgDiv img{
+    width: 100%;
+}
+.mainDiv{
+    background-color: rgba(137, 43, 226, 0.315);
+}
+.titleDiv{
+    display: grid;
+    justify-content: center;
+}
