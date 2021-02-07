@@ -1,36 +1,45 @@
-body{
+body {
     font-family: arial;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
 }
+
 /* menu style start */
-.header-container{
+
+.header-container {
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-.top-left{
+
+.top-left {
     display: grid;
     justify-content: end;
 }
-.top-left ul{
+
+.top-left ul {
     list-style-type: none;
     display: flex;
 }
-.top-left ul li a{
+
+.top-left ul li a {
     color: black;
     text-decoration: none;
     padding: 0px 20px;
     font-weight: bold;
 }
+
 /* menu style end */
 
 /* sreach style start */
-.search-area{
+
+.search-area {
     display: flex;
     justify-content: center;
 }
+
 input[type=text] {
     border: 1px solid blueviolet;
     border-radius: 0px;
@@ -38,61 +47,82 @@ input[type=text] {
     background-color: white;
     background-image: url('images/search-icon.png');
     background-size: 20px;
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 100px 12px 40px;
-  }
-  
-.search-area button{
+}
+
+.search-area button {
     padding: 0px 20px;
     background-color: blueviolet;
     border: 0;
     cursor: pointer;
     font-size: larger;
-    
 }
+
 /* sreach style end */
-#allMeals{
+
+#allMeals {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px 30px;
 }
-.mainDiv{
+
+.mainDiv {
     background-color: rgba(137, 43, 226, 0.315);
 }
-.mainDiv a{
+
+.mainDiv a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-
-.imgDiv{
+.imgDiv {
     margin: 5px;
 }
-.imgDiv img{
+
+.imgDiv img {
     width: 100%;
 }
 
-.titleDiv{
+.titleDiv {
     display: grid;
     justify-content: center;
 }
+
 /* IngredientUl */
-.IngredientUl{
+
+.IngredientUl {
     list-style-type: none;
 }
-.IngredientUl li{
+
+.IngredientUl li {
     margin-top: 15px;
 }
-.IngredientUl li span{
+
+.IngredientUl li span {
     margin-left: 20px;
 }
-.IngredientUl li::before{
-        content: '✓';
-        color: blanchedalmond;
-        background-color: blueviolet;
-        padding: 5px;
-        border-radius: 5px;
 
+.IngredientUl li::before {
+    content: '✓';
+    color: blanchedalmond;
+    background-color: blueviolet;
+    padding: 5px;
+    border-radius: 5px;
+}
+.mealDetails{
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+.mealDetails img{
+    width: 500px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.mealDetails h1{
+    font-size:30px;
 }
