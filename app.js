@@ -34,8 +34,6 @@ function pushValue(receiveValue) {
 
     }
 }
-
-
 const displayMealDetails = mealDetails =>{
    const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealDetails}`;
    
@@ -65,5 +63,4 @@ const renderMealInfo = mealsInfo=>{
         </ul>
     </div>
     `
-    
 }
