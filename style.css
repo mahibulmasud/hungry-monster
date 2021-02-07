@@ -1,7 +1,7 @@
 body{
     font-family: arial;
 }
-.conatainer{
+.container{
     width: 80%;
     margin: 0 auto;
 }
@@ -77,4 +77,22 @@ input[type=text] {
 .titleDiv{
     display: grid;
     justify-content: center;
+}
+/* IngredientUl */
+.IngredientUl{
+    list-style-type: none;
+}
+.IngredientUl li{
+    margin-top: 15px;
+}
+.IngredientUl li span{
+    margin-left: 20px;
+}
+.IngredientUl li::before{
+        content: '✓';
+        color: blanchedalmond;
+        background-color: blueviolet;
+        padding: 5px;
+        border-radius: 5px;
+
 }

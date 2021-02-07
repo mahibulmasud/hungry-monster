@@ -48,7 +48,19 @@ const displayMealDetails = mealDetails =>{
 const renderMealInfo = mealsInfo=>{
     const MealsDiv = document.getElementById('meal-details');
     MealsDiv.innerHTML = `
+    <div class="container">
         <img src="${mealsInfo.strMealThumb}" width="200px">
         <h1>${mealsInfo.strMeal}</h1>
+        <h3>Ingredients</h3>
+        <ul class="IngredientUl">
+             <li><span>${mealsInfo.strIngredient1}</span></li>
+             <li><span>${mealsInfo.strIngredient2}</span></li>
+             <li><span>${mealsInfo.strIngredient3}</span></li>
+             <li><span>${mealsInfo.strIngredient4}</span></li>
+             <li><span>${mealsInfo.strIngredient5}</span></li>
+             <li><span>${mealsInfo.strIngredient6}</span></li>
+        </ul>
+    </div>
     `
+    
 }
