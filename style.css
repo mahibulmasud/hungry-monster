@@ -12,7 +12,7 @@ body {
 .header-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    background-color: rgba(137, 43, 226, 0.089);
+    background-color: rgba(137, 43, 226, 0.342);
 }
 .child2 {
     display: grid;
@@ -47,6 +47,7 @@ body {
 
 input[type=text] {
     border: 1px solid blueviolet;
+    color: rgb(45, 6, 82);
     border-radius: 0px;
     font-size: 16px;
     background-color: white;
