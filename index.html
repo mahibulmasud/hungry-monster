@@ -31,12 +31,12 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <!-- search section -->
-        <section class="container">
+        <section>
             <div class="search-area">
-                <input id="searchInputArea" type="text" name="search" placeholder="Search..">
-                <button id="SearchButton">Search</button>
+                <input id="search-field" type="text" name="search" placeholder="Search..">
+                <button onclick="searchMeals()">Search</button>
             </div>
         </section>
         <section>
@@ -45,7 +45,9 @@
             </div>
         </section>
         <!-- API div section -->
+        <h3 id="error-message"></h3>
         <section style="margin-top: 30px;">
+            
             <div id="allMeals" class="container">
 
             </div>
